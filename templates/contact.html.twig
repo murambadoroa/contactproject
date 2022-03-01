@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <form method="post" action="">
+        <div>
+            <label for="name">Name</label>
+            <input name="name" id="name" value="Gavin" required />
+        </div>
+
+        <br />
+
+        <div>
+            <label for="email">Email</label>
+            <input name="email" id="email" required value="test@example.com" />
+        </div>
+
+        <button name="submit" type="submit" value="1">Submit</button>
+    </form>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <style>
+
+    </style>
+{% endblock %}
